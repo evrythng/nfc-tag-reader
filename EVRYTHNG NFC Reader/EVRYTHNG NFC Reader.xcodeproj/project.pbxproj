@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		094DA89D1FA798FE006E806F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094DA89C1FA798FD006E806F /* LaunchScreen.storyboard */; };
+		09D861061FA78D08009AE638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D861051FA78D08009AE638 /* AppDelegate.swift */; };
+		09D8610E1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D8610C1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld */; };
+		09D861101FA78D08009AE638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D8610F1FA78D08009AE638 /* Assets.xcassets */; };
+		09D8611C1FA78D85009AE638 /* evrythngNFC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8611B1FA78D85009AE638 /* evrythngNFC.swift */; };
+		09D8611E1FA78DEC009AE638 /* ADIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D8611D1FA78DEB009AE638 /* ADIViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		094DA89C1FA798FD006E806F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09D861021FA78D08009AE638 /* EVRYTHNG NFC Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EVRYTHNG NFC Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D861051FA78D08009AE638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09D8610D1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EVRYTHNG_NFC_Reader.xcdatamodel; sourceTree = "<group>"; };
+		09D8610F1FA78D08009AE638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09D861141FA78D08009AE638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09D8611A1FA78D22009AE638 /* EVRYTHNG NFC Reader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EVRYTHNG NFC Reader.entitlements"; sourceTree = "<group>"; };
+		09D8611B1FA78D85009AE638 /* evrythngNFC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evrythngNFC.swift; sourceTree = "<group>"; };
+		09D8611D1FA78DEB009AE638 /* ADIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADIViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09D860FF1FA78D08009AE638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09D860F91FA78D08009AE638 = {
+			isa = PBXGroup;
+			children = (
+				09D861041FA78D08009AE638 /* EVRYTHNG NFC Reader */,
+				09D861031FA78D08009AE638 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09D861031FA78D08009AE638 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09D861021FA78D08009AE638 /* EVRYTHNG NFC Reader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09D861041FA78D08009AE638 /* EVRYTHNG NFC Reader */ = {
+			isa = PBXGroup;
+			children = (
+				09D8611A1FA78D22009AE638 /* EVRYTHNG NFC Reader.entitlements */,
+				09D861051FA78D08009AE638 /* AppDelegate.swift */,
+				09D8610F1FA78D08009AE638 /* Assets.xcassets */,
+				09D861141FA78D08009AE638 /* Info.plist */,
+				09D8610C1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld */,
+				09D8611B1FA78D85009AE638 /* evrythngNFC.swift */,
+				09D8611D1FA78DEB009AE638 /* ADIViewController.swift */,
+				094DA89C1FA798FD006E806F /* LaunchScreen.storyboard */,
+			);
+			path = "EVRYTHNG NFC Reader";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09D861011FA78D08009AE638 /* EVRYTHNG NFC Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D861171FA78D08009AE638 /* Build configuration list for PBXNativeTarget "EVRYTHNG NFC Reader" */;
+			buildPhases = (
+				09D860FE1FA78D08009AE638 /* Sources */,
+				09D860FF1FA78D08009AE638 /* Frameworks */,
+				09D861001FA78D08009AE638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EVRYTHNG NFC Reader";
+			productName = "EVRYTHNG NFC Reader";
+			productReference = 09D861021FA78D08009AE638 /* EVRYTHNG NFC Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09D860FA1FA78D08009AE638 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = EVRYTHNG;
+				TargetAttributes = {
+					09D861011FA78D08009AE638 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 09D860FD1FA78D08009AE638 /* Build configuration list for PBXProject "EVRYTHNG NFC Reader" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09D860F91FA78D08009AE638;
+			productRefGroup = 09D861031FA78D08009AE638 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09D861011FA78D08009AE638 /* EVRYTHNG NFC Reader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09D861001FA78D08009AE638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D861101FA78D08009AE638 /* Assets.xcassets in Resources */,
+				094DA89D1FA798FE006E806F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09D860FE1FA78D08009AE638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09D8611E1FA78DEC009AE638 /* ADIViewController.swift in Sources */,
+				09D861061FA78D08009AE638 /* AppDelegate.swift in Sources */,
+				09D8611C1FA78D85009AE638 /* evrythngNFC.swift in Sources */,
+				09D8610E1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		09D861151FA78D08009AE638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		09D861161FA78D08009AE638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09D861181FA78D08009AE638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "EVRYTHNG NFC Reader/EVRYTHNG NFC Reader.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L9VK494LA;
+				INFOPLIST_FILE = "EVRYTHNG NFC Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = evrythng.com.nfcreader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		09D861191FA78D08009AE638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "EVRYTHNG NFC Reader/EVRYTHNG NFC Reader.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3L9VK494LA;
+				INFOPLIST_FILE = "EVRYTHNG NFC Reader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = evrythng.com.nfcreader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09D860FD1FA78D08009AE638 /* Build configuration list for PBXProject "EVRYTHNG NFC Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D861151FA78D08009AE638 /* Debug */,
+				09D861161FA78D08009AE638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D861171FA78D08009AE638 /* Build configuration list for PBXNativeTarget "EVRYTHNG NFC Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D861181FA78D08009AE638 /* Debug */,
+				09D861191FA78D08009AE638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09D8610C1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09D8610D1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodel */,
+			);
+			currentVersion = 09D8610D1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodel */;
+			path = EVRYTHNG_NFC_Reader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 09D860FA1FA78D08009AE638 /* Project object */;
+}
