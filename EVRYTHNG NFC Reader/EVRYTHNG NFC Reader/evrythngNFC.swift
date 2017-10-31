@@ -24,7 +24,8 @@ struct  ADIValidator {
         guard let prefix = str.first else {
             return
         }
-        print("debug \(str) \(str.count)")
+        print("Payload '\(str)' ")
+        print("END")
         if let uri = URL(string:ADIValidator.uriPrefixMap[prefix]! + str[str.index(str.startIndex, offsetBy:1)...]), (ADIValidator.uriPrefixMap[prefix] != nil) {
             UIApplication.shared.open(uri,options: [:]){ (success) in
                 if success {

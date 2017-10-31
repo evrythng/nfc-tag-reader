@@ -31,8 +31,8 @@
                             <outlet property="delegate" destination="8vo-hM-agg" id="SgK-4x-dba"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="C2O-ld-QH7">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="gEH-st-zHN" userLabel="Scan">
+                    <navigationItem key="navigationItem" title="Scan a new NFC Tag" id="C2O-ld-QH7">
+                        <barButtonItem key="rightBarButtonItem" title="Scan" id="gEH-st-zHN" userLabel="Scan">
                             <connections>
                                 <action selector="beginScanning:" destination="8vo-hM-agg" id="Ohl-QL-g9m"/>
                             </connections>

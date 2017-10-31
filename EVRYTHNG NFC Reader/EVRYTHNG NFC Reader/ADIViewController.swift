@@ -28,12 +28,12 @@ class ADIViewController:UITableViewController, NFCNDEFReaderSessionDelegate{
             }
             
         case .absoluteURI:
-            if let type = String(data: message.records[0].payload, encoding:.utf8) {
-                
-                ADIValidator.parseNFCPayload(payload: message.records[0]) {(uri) in
-                    UIApplication.shared.open(uri, options: [:])
-                }
+            
+            
+            ADIValidator.parseNFCPayload(payload: message.records[0]) {(uri) in
+                UIApplication.shared.open(uri, options: [:])
             }
+            
         case .empty:
             let alertController = UIAlertController(title: "Session Invalidated", message: "The tag format .empty is not supported", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
