@@ -14,5 +14,8 @@ Our app is a barebone iOS single view app that starts scanning for NFC tags on s
 You will need at an iPhone 7 running iOS11 and a commerical developer license.
 
 1. Activate the Near Field Communication Tag Reading capability.
-
 2. The app needs permissions to use the NFC reader. I this is not set, the app will crash as soon as the NFC reader is started. In  [info.plist](), add an entry key: `Privacy - NFC Scan Usage Description`  value: `NFC tag to read NDEF messages into the application`.
+3. Install the app on your iPhone
+4. Open the app. It will immediately try to read an NFC tag.
+5. Place an NFC tag with a URL next to the phone. The app open the URL with Safari.
+
