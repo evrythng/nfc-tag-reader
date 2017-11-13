@@ -12,7 +12,6 @@
         <!--Evrythng NFC-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="01J-lp-oVM" customClass="ADIViewController" customModule="EVRYTHNG_NFC_Reader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -21,7 +20,9 @@
                             <button autoresizesSubviews="NO" contentMode="scaleAspectFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOs-c3-NSQ">
                                 <rect key="frame" x="85" y="247" width="209" height="193"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <state key="normal" title="Button" image="buttonblue"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button" image="ButtonGrey"/>
                                 <connections>
                                     <action selector="beginScanning:" destination="01J-lp-oVM" eventType="touchDown" id="8MJ-Kq-4bL"/>
                                 </connections>
@@ -38,8 +39,8 @@
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Evrythng NFC" id="fjc-ZY-ffk">
-                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="S2n-Yf-qqE">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" style="done" systemItem="bookmarks" id="S2n-Yf-qqE">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="About" id="dfK-Ok-sDq">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,6 +50,7 @@
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
@@ -114,6 +116,7 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YGf-2I-KaT"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffv-9E-C9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,7 +125,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ButtonGrey" width="592" height="578"/>
         <image name="EVRYTHNG-black-logo-transparent-background" width="624" height="310"/>
-        <image name="buttonblue" width="592" height="578"/>
     </resources>
 </document>
