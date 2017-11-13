@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import CoreNFC
 
-class ADIViewController:UITableViewController, NFCNDEFReaderSessionDelegate{
+class ADIViewController:UIViewController, NFCNDEFReaderSessionDelegate{
     
     let reuseIdentifier = "reuseIdentifier"
     var detectedMessages = [NFCNDEFMessage]()
@@ -21,17 +21,33 @@ class ADIViewController:UITableViewController, NFCNDEFReaderSessionDelegate{
         let message = messages[messages.startIndex]
         switch message.records[0].typeNameFormat {
         case .nfcWellKnown:
-            
+ 
             
             ADIValidator.parseNFCPayload(payload: message.records[0]) {(uri) in
-                UIApplication.shared.open(uri, options: [:])
+                if let uri = uri {
+                    UIApplication.shared.open(uri, options: [:])
+                } else {
+                    let alertController = UIAlertController(title: "Cannot read tag content", message: "The tag format is not supported", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    DispatchQueue.main.async {
+                        self.present(alertController, animated: true, completion: nil)
+                    }
+                }
             }
             
         case .absoluteURI:
             
             
             ADIValidator.parseNFCPayload(payload: message.records[0]) {(uri) in
-                UIApplication.shared.open(uri, options: [:])
+                if let uri = uri {
+                    UIApplication.shared.open(uri, options: [:])
+                } else {
+                    let alertController = UIAlertController(title: "Cannot read tag content", message: "The tag format is not supported", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+                    DispatchQueue.main.async {
+                        self.present(alertController, animated: true, completion: nil)
+                    }
+                }
             }
             
         case .empty:
@@ -79,9 +95,9 @@ class ADIViewController:UITableViewController, NFCNDEFReaderSessionDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: true)
+        //session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: true)
         print("viewDidLoad")
-        session?.begin()
+//        session?.begin()
     }
     
     

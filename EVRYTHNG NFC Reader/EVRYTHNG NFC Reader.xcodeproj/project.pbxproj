@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		094DA89D1FA798FE006E806F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094DA89C1FA798FD006E806F /* LaunchScreen.storyboard */; };
+		09320CCD1FB9C0BB00BF1235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09320CCC1FB9C0BB00BF1235 /* Main.storyboard */; };
 		09D861061FA78D08009AE638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D861051FA78D08009AE638 /* AppDelegate.swift */; };
 		09D8610E1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D8610C1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld */; };
 		09D861101FA78D08009AE638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D8610F1FA78D08009AE638 /* Assets.xcassets */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		094DA89C1FA798FD006E806F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09320CCC1FB9C0BB00BF1235 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		09D861021FA78D08009AE638 /* EVRYTHNG NFC Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EVRYTHNG NFC Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D861051FA78D08009AE638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D8610D1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EVRYTHNG_NFC_Reader.xcdatamodel; sourceTree = "<group>"; };
@@ -57,6 +57,7 @@
 		09D861041FA78D08009AE638 /* EVRYTHNG NFC Reader */ = {
 			isa = PBXGroup;
 			children = (
+				09320CCC1FB9C0BB00BF1235 /* Main.storyboard */,
 				09D8611A1FA78D22009AE638 /* EVRYTHNG NFC Reader.entitlements */,
 				09D861051FA78D08009AE638 /* AppDelegate.swift */,
 				09D8610F1FA78D08009AE638 /* Assets.xcassets */,
@@ -64,7 +65,6 @@
 				09D8610C1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld */,
 				09D8611B1FA78D85009AE638 /* evrythngNFC.swift */,
 				09D8611D1FA78DEB009AE638 /* ADIViewController.swift */,
-				094DA89C1FA798FD006E806F /* LaunchScreen.storyboard */,
 			);
 			path = "EVRYTHNG NFC Reader";
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D861101FA78D08009AE638 /* Assets.xcassets in Resources */,
-				094DA89D1FA798FE006E806F /* LaunchScreen.storyboard in Resources */,
+				09320CCD1FB9C0BB00BF1235 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +270,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3L9VK494LA;
 				INFOPLIST_FILE = "EVRYTHNG NFC Reader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = evrythng.com.nfcreader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3L9VK494LA;
 				INFOPLIST_FILE = "EVRYTHNG NFC Reader/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = evrythng.com.nfcreader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
