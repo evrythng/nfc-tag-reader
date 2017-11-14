@@ -21,35 +21,29 @@ class ADIViewController:UIViewController, NFCNDEFReaderSessionDelegate{
         let message = messages[messages.startIndex]
         switch message.records[0].typeNameFormat {
         case .nfcWellKnown:
- 
-            
             ADIValidator.parseNFCPayload(payload: message.records[0]) {(uri) in
                 if let uri = uri {
                     UIApplication.shared.open(uri, options: [:])
                 } else {
-                    let alertController = UIAlertController(title: "Cannot read tag content", message: "The tag format is not supported", preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Cannot read tag this tag", message: "This tag does not contain a valid URI", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                     DispatchQueue.main.async {
                         self.present(alertController, animated: true, completion: nil)
                     }
                 }
             }
-            
         case .absoluteURI:
-            
-            
             ADIValidator.parseNFCPayload(payload: message.records[0]) {(uri) in
                 if let uri = uri {
                     UIApplication.shared.open(uri, options: [:])
                 } else {
-                    let alertController = UIAlertController(title: "Cannot read tag content", message: "The tag format is not supported", preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Cannot read tag this tag", message: "This tag does not contain a valid URI", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
                     DispatchQueue.main.async {
                         self.present(alertController, animated: true, completion: nil)
                     }
                 }
             }
-            
         case .empty:
             let alertController = UIAlertController(title: "Session Invalidated", message: "The tag format .empty is not supported", preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -96,7 +90,6 @@ class ADIViewController:UIViewController, NFCNDEFReaderSessionDelegate{
         super.viewDidLoad()
         
         //session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: true)
-        print("viewDidLoad")
 //        session?.begin()
     }
     
