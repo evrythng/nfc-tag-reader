@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09320CCD1FB9C0BB00BF1235 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09320CCC1FB9C0BB00BF1235 /* Main.storyboard */; };
 		09320CD31FBA1F9500BF1235 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09320CD21FBA1F9400BF1235 /* LaunchScreen.storyboard */; };
+		09D33D671FBE0B20000BBF69 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D33D661FBE0B20000BBF69 /* AboutViewController.swift */; };
 		09D861061FA78D08009AE638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D861051FA78D08009AE638 /* AppDelegate.swift */; };
 		09D8610E1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D8610C1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld */; };
 		09D861101FA78D08009AE638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D8610F1FA78D08009AE638 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		09320CCC1FB9C0BB00BF1235 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		09320CD21FBA1F9400BF1235 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09D33D661FBE0B20000BBF69 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		09D861021FA78D08009AE638 /* EVRYTHNG NFC Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EVRYTHNG NFC Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D861051FA78D08009AE638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09D8610D1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EVRYTHNG_NFC_Reader.xcdatamodel; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				09D8610C1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld */,
 				09D8611B1FA78D85009AE638 /* evrythngNFC.swift */,
 				09D8611D1FA78DEB009AE638 /* ADIViewController.swift */,
+				09D33D661FBE0B20000BBF69 /* AboutViewController.swift */,
 			);
 			path = "EVRYTHNG NFC Reader";
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				09D8611E1FA78DEC009AE638 /* ADIViewController.swift in Sources */,
 				09D861061FA78D08009AE638 /* AppDelegate.swift in Sources */,
 				09D8611C1FA78D85009AE638 /* evrythngNFC.swift in Sources */,
+				09D33D671FBE0B20000BBF69 /* AboutViewController.swift in Sources */,
 				09D8610E1FA78D08009AE638 /* EVRYTHNG_NFC_Reader.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

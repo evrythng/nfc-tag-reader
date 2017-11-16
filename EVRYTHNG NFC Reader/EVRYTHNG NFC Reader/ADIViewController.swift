@@ -17,8 +17,9 @@ class ADIViewController:UIViewController, NFCNDEFReaderSessionDelegate{
     var session: NFCNDEFReaderSession?
     
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
-        
+        print("DEBUG CTRL 0")
         let message = messages[messages.startIndex]
+        
         switch message.records[0].typeNameFormat {
         case .nfcWellKnown:
             ADIValidator.parseNFCPayload(payload: message.records[0]) {(uri) in
@@ -89,8 +90,8 @@ class ADIViewController:UIViewController, NFCNDEFReaderSessionDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: true)
-//        session?.begin()
+        session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: true)
+        session?.begin()
     }
     
     
